@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drivings_segments">
+        <item>Активные</item>
+        <item>История</item>
+    </string-array>
+</resources>

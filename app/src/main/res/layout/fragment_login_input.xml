@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_login_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageViewLoginSotaLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sota_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutLoginPhoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.499">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewLoginInputFlag"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/loginPhonePinViewCode"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1.5"
+                    android:backgroundTint="@color/gray_edit_text"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:maxLength="4"
+                    android:text="+7"
+                    android:textAlignment="center"
+                    android:textSize="24dp" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/loginPhonePinViewCodeFirstThreeNumbers"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/gray_edit_text"
+                    android:hint="978"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:maxLength="3"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="24dp"
+                    app:viewType="line" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/loginPhonePinViewCodeSecondThreeNumbers"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/gray_edit_text"
+                    android:hint="047"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:maxLength="3"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    app:itemWidth="75dp"
+                    app:viewType="line" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/loginPhonePinViewCodeFirstTwoNumbers"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray_edit_text"
+                    android:hint="56"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:maxLength="2"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    app:itemWidth="50dp"
+                    app:viewType="line" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/loginPhonePinViewCodeSecondTwoNumbers"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/gray_edit_text"
+                    android:hint="41"
+                    android:inputType="phone"
+                    android:letterSpacing="0.1"
+                    android:maxLength="2"
+                    android:textAlignment="center"
+                    android:textSize="24dp"
+                    app:itemWidth="50dp"
+                    app:viewType="line" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewLoginInputFlag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_white_circle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginNamePinInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="@color/gray_edit_text"
+            android:hint="Иван"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:itemCount="1"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutLoginPhoneInput"
+            app:viewType="line"
+            tools:layout_editor_absoluteX="0dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLoginSotaLogo"
+        app:layout_constraintVertical_bias="0.589">
+
+        <TextView
+            android:id="@+id/textViewLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/login_label"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_sub_label"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLoginLabel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonLoginRequestCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_curved_gradient"
+        android:text="@string/login_get_code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switchLoginAgreement"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/login_agree"
+        android:theme="@style/SCBSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLoginRequestCode"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLoginRequestCode"
+        app:layout_constraintStart_toStartOf="@+id/buttonLoginRequestCode"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <View
+        android:id="@+id/viewLoginClickableUserAgreement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/switchLoginAgreement"
+        app:layout_constraintEnd_toEndOf="@+id/switchLoginAgreement"
+        app:layout_constraintStart_toStartOf="@+id/switchLoginAgreement"
+        app:layout_constraintTop_toTopOf="@+id/switchLoginAgreement"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

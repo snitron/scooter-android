@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/icon_purple</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/icon_purple</item>
+        <item name="font">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="FullscreenAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/icon_purple</item>
+        <item name="colorPrimaryDark">@color/blue_indicator</item>
+        <item name="colorAccent">@color/icon_purple</item>
+    </style>
+
+    <style name="AppTheme.Launch" parent="FullscreenAppTheme">
+        <item name="android:windowBackground">@drawable/ic_launch_screen</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/green_switch</item>
+
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+    <style name="GradientButton" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/ic_curved_gradient</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

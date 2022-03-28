@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuMapItemProfile"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_menu_icon_profile" />
+    <item
+        android:id="@+id/menuMapItemPurse"
+        android:title="@string/menu_purse"
+        android:icon="@drawable/ic_menu_icon_purse" />
+    <item
+        android:id="@+id/menuMapItemDrivings"
+        android:title="@string/menu_drivings"
+        android:icon="@drawable/ic_menu_icon_scooter" />
+    <item
+        android:id="@+id/menuMapItemPromo"
+        android:title="@string/menu_promo"
+        android:icon="@drawable/ic_menu_icon_promo" />
+    <item
+        android:id="@+id/menuMapItemLearn"
+        android:title="@string/menu_learn"
+        android:icon="@drawable/ic_menu_icon_info" />
+    <item
+        android:id="@+id/menuMapItemHelp"
+        android:title="@string/menu_help"
+        android:icon="@drawable/ic_menu_icon_help" />
+</menu>

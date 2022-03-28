@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageViewMapMarker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_purple_circle_with_white_corner"
+    android:padding="8dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_icon_scooter_third"
+    tools:layout_editor_absoluteX="80dp" />
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray_transparent">#FFFFFF</color>
+    <color name="blue_indicator">#09047E</color>
+
+    <color name="background_gray">#E0E0E0</color>
+    <color name="green_edit_text">#14D53D</color>
+    <color name="red_edit_text">#FF453A</color>
+    <color name="gray_edit_text">#AAAAAA</color>
+    <color name="purple_text">#003771</color>
+    <color name="purple_secondary_text">#9D2CDD</color>
+
+    <color name="green_switch">#14D53D</color>
+
+    <color name="sota_purple_gradient_start">#F300D8</color>
+    <color name="sota_purple_gradient_end">#09047E</color>
+
+    <color name="sota_scooter_gradient_start">#24F300D8</color>
+    <color name="sota_scooter_gradient_end">#00C4C4C4</color>
+
+    <color name="segment_white">#FFFFFF</color>
+    <color name="segment_gray">#EEEEEF</color>
+    <color name="segment_black">#000000</color>
+
+    <color name="icon_purple">#9D2CDD</color>
+    <color name="border_purple">#9D2CDD</color>
+    <color name="qr_purple">#09047E</color>
+    <color name="circle_purple">#9D2CDD</color>
+
+</resources>
